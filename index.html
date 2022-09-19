@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/root.css">
+    <title>MadZombie</title>
+  </head>
+  <body>
+
+    <div class="background-gradient"></div>
+    <div>
+      <img class="background" src="./assets/peakpx.jpg" alt="background-image">
+    </div>
+
+    <header class="header grid" id="header">
+      <div class="logo">
+        <div class="logo-item">
+          <img src="./assets/Zombie.svg" alt="zombie-logo">
+        </div>    
+      </div>
+
+      <nav class="nav flex">
+        <div class="nav__header flex">
+          <div class="nav__logo flex">
+            <img src="./assets/Zombie.svg" alt="zombie-logo">
+            <h1 class="nav__logo-text">MadZombie</h1>
+          </div>
+  
+          <div class="nav__close">
+            <img src="./assets/x-lg.svg" alt="x-icon">
+          </div>
+        </div>
+
+        <div class="nav__menu flex">
+          <ul class="nav__list uppercase">
+            <li class="nav__item">
+              <a href="#artist" class="nav__link">
+                artist
+                <img class="nav__link-icon" src="./assets/arrow-right.svg" alt="arrow-light">
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">
+                about
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#news" class="nav__link">
+                news
+                <img class="nav__link-icon" src="./assets/arrow-right.svg" alt="arrow-light">
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#events" class="nav__link">
+                events
+                <img class="nav__link-icon" src="./assets/arrow-right.svg" alt="arrow-light">
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#events" class="nav__link">
+                programming
+                <img class="nav__link-icon" src="./assets/arrow-right.svg" alt="arrow-light">
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#events" class="nav__link">
+                gold
+              </a>
+            </li>
+          </ul>
+
+          <div class="nav__icons">
+            <ul class="nav__iconslist flex">
+              <li class="nav__iconitem">
+                <a href="#" class="nav__link">
+                  <img src="./assets/tiktok.svg" alt="titok-logo">
+                </a>
+              </li>
+              <li class="nav__iconitem">
+                <a href="#" class="nav__link">
+                  <img src="./assets/facebook.svg" alt="facebook-logo">
+                </a>
+              </li>
+              <li class="nav__iconitem">
+                <a href="#" class="nav__link">
+                  <img src="./assets/discord.svg" alt="discord-logo">
+                </a>
+              </li>
+              <li class="nav__iconitem">
+                <a href="#" class="nav__link">
+                  <img src="./assets/reddit.svg" alt="reddit-logo">
+                </a>
+              </li>
+              <li class="nav__iconitem">
+                <a href="#" class="nav__link">
+                  <img src="./assets/instagram.svg" alt="reddit-logo">
+                </a>
+              </li>
+              <li class="nav__iconitem">
+                <a href="#" class="nav__link">
+                  <img src="./assets/twitch.svg" alt="reddit-logo">
+                </a>
+              </li>
+              <li class="nav__iconitem">
+                <a href="#" class="nav__link">
+                  <img src="./assets/twitter.svg" alt="reddit-logo">
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="nav__footer flex uppercase">        
+            <button class="nav__signin uppercase">
+              sign in
+            </button>
+            or
+            <button class="nav__signup uppercase">
+              sign up
+            </button>
+          </div>
+        </div>
+
+        <!-- Deactivate navbar by clicking outside -->
+        <div class="overlay"></div>
+      </nav>
+
+      <div class="header__menu flex">
+        <div class="nav__toggle">
+          <img src="./assets/menu.svg" alt="menu-icon">
+        </div>
+
+        <!-- Separate the icons from the hamburguer menu -->
+      </div>
+    </header>
+    <main id="main">
+      <section class="icons-header">
+        <div class="header__icons">
+          <ul class="header__icons-list flex">
+            <li class="header__icons-item">
+              <a href="#" class="icon__link">
+                <img src="./assets/tiktok.svg" alt="titok-logo">
+              </a>
+            </li>
+            <li class="header__icons-item">
+              <a href="#" class="icon__link">
+                <img src="./assets/facebook.svg" alt="facebook-logo">
+              </a>
+            </li>
+            <li class="header__icons-item">
+              <a href="#" class="icon__link">
+                <img src="./assets/discord.svg" alt="discord-logo">
+              </a>
+            </li>
+            <li class="header__icons-item">
+              <a href="#" class="icon__link">
+                <img src="./assets/reddit.svg" alt="reddit-logo">
+              </a>
+            </li>
+            <li class="header__icons-item">
+              <a href="#" class="icon__link">
+                <img src="./assets/instagram.svg" alt="reddit-logo">
+              </a>
+            </li>
+            <li class="header__icons-item">
+              <a href="#" class="icon__link">
+                <img src="./assets/twitch.svg" alt="reddit-logo">
+              </a>
+            </li>
+            <li class="header__icons-item">
+              <a href="#" class="icon__link">
+                <img src="./assets/twitter.svg" alt="reddit-logo">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="cover-image">
+        <div class="cover flex">
+          <div class="cover__lateral">
+            <p class="cover__lateral-text">
+              <span class="cover__lateral-color">The squad</span> - Released September 14, 2022 
+            </p>
+          </div>
+          <div class="cover__wallpaper">
+            <img class="cover__wallpaper-item" src="./assets/peakpx.jpg" alt="cover-image">
+          </div>
+          <div class="cover__info">
+            <div class="cover__info-header">
+              <div class="cover__info-title">
+                <h1>The Squad</h1>
+              </div>
+              <div class="cover__info-author">
+                <h2>redsheep</h2>
+              </div>
+            </div>
+            <div class="cover__info-buttons">
+              <div class="cover__info-button">
+                <button>listen now</button>
+              </div>
+              <div class="cover__info-button">
+                <button>share</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./js/home.js"></script>
+  </body>
+</html>

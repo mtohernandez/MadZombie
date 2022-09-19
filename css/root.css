@@ -1,0 +1,78 @@
+
+:root{
+  
+  --header-height: 6rem;
+
+  --main-color: hsl(0, 0%, 100%);
+  --second-color: hsl(36, 94%, 58%);
+  --main-dark-color: black;
+
+  --normal-font-size: 1rem;
+  --big-font-size: 2rem;
+  
+  --body-font: 'Monument Extended', Arial;
+  --second-font: 'Montserrat', Arial;
+
+  --min-body-height: 100vh;
+
+
+  --mb-0-25: .25rem;
+  --mb-0-5: .5rem;
+  --mb-0-75: .75rem;
+  --mb-1: 1rem;
+  --mb-1-5: 1.5rem;
+  --mb-2: 2rem;
+  --mb-2-5: 2.5rem;
+  --mb-3: 3rem;
+  --mb-5: 5rem;
+  --mb-7: 7rem;
+
+  --z-fixed: 100;
+  --z-tooltop: 10; 
+  --z-top: 1000;
+  --z-under: 1;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+img{
+  max-width: 100%;
+}
+
+body{
+  background-color: rgb(61, 61, 61);
+  scroll-behavior: smooth;
+  min-height: var(--min-body-height);
+  font-family: var(--body-font);
+  font-style: normal;
+  color: var(--main-color);
+  overflow-x: hidden;
+}
+
+.uppercase{
+  text-transform: uppercase;
+}
+
+.lowercase{
+  text-transform: lowercase;
+}
+
+.grid{
+  display: grid;
+}
+
+.flex{
+  display: flex;
+}
