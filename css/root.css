@@ -1,3 +1,4 @@
+@import url('http://fonts.cdnfonts.com/css/monument-extended');
 
 :root{
   
@@ -11,6 +12,8 @@
   --big-font-size: 2rem;
 
   --album-section: 20rem;
+
+  --body-padding: 10rem;
   
   --body-font: 'Monument Extended', Arial;
   --second-font: 'Montserrat', Arial;
