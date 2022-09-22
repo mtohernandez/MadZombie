@@ -22,12 +22,12 @@
 
 /* header */
 .header{
-  position: fixed;
   width: 100%;
   grid-template-columns: 1fr 0.2fr;
 }
 
 .logo-item{
+  position: fixed;
   padding: 1rem;
   background-color: black;
   width: 5rem;
@@ -41,7 +41,7 @@
 
 
 .nav{
-  position: absolute;
+  position: fixed;
   top: 0;
   right: -100%; /* this parameter opens the navbar */
   bottom: 0;
@@ -154,10 +154,6 @@
   align-items: flex-end;
 }
 
-.header__icons{
-  margin-top: var(--header-height);
-}
-
 .header__icons-item{
   margin-bottom: 1rem;
 }
@@ -166,11 +162,16 @@
   flex-direction: column;
 }
 
+.nav__toggle{
+  position: fixed;
+}
+
 .nav__toggle:hover{
   cursor: pointer;
 }
 
 .icons-header{
+  margin-top: var(--header-height);
   position: fixed;
   display: flex;
   flex-direction: column;
@@ -305,6 +306,39 @@
   fill: var(--main-color);
 }
 
+@media screen and (max-width: 1303px) {
+  .cover{
+    flex-direction: column;
+    align-items: flex-start;
+    height: 40rem;
+  }
+
+  .cover__wallpaper{
+    width: 100%;
+  }
+
+  .cover__wallpaper-item{
+    width: 100%;
+  }
+
+  .cover__info{
+    margin: 0;
+  }
+
+  .cover__lateral{
+   display: none;
+  }
+
+  .cover__info-title h1{
+    font-size: 3rem;
+  }
+  
+  .cover__info-author h2{
+    font-size: 1rem;
+  }
+
+}
+
 /* Stream section */
 
 .stream{
@@ -318,6 +352,10 @@
   align-items: center;
   border: 1px solid var(--main-color);
   padding: 1rem 2rem;
+}
+
+.stream-box:hover{
+  cursor: pointer;
 }
 
 .stream-box img{
@@ -357,4 +395,44 @@
 .track__numbers{
   font-family:  var(--second-font);
   gap: 1rem;
+}
+
+/* releases */
+.releases{
+  flex-direction: column;
+  gap: 1rem;
+}
+
+
+
+.releases-content{
+  max-width: 100%;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  height: 25rem;
+  scroll-behavior: smooth;
+}
+
+.releases__list{
+  gap: 1rem;
+}
+
+.release-item{
+  height: 20rem;
+}
+
+.release__portrait{
+  display: inline-flex;
+}
+
+.release__portrait,
+.release__portrait img{ 
+  width: 300px;
+  height: 100%;
+  object-fit: cover;
+}
+
+.releases-author{
+  font-family: var(--second-font);
+  text-transform: capitalize;
 }
